@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <title>Home — Uditansh Gupta</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+  <canvas id="sakuraCanvas"></canvas>
+
+  <nav class="navbar">
+    <a th:href="@{/}">Home</a>
+    <a th:href="@{/about}">About</a>
+    <a th:href="@{/experience}">Experience</a>
+    <a th:href="@{/skills}">Skills</a>
+    <a th:href="@{/projects}">Projects</a>
+    <a th:href="@{/contact}">Contact</a>
+  </nav>
+
+  <header class="header" id="home">
+    <div class="header-inner">
+      <div class="avatar-wrap">
+        <img th:src="@{/images/avatar.jpg}" alt="avatar">
+      </div>
+      <div>
+        <h1 class="site-title">Uditansh Gupta</h1>
+        <p class="site-sub">Math Major • AI/ML Explorer • Future Quant • Japanese Enthusiast</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Welcome</h2>
+      <p>Hi — I'm Uditansh. This portfolio shows my journey in mathematics, machine learning, and research.</p>
+    </section>
+
+    <section class="card">
+      <h2>Highlights</h2>
+      <ul>
+        <li>BS-MS Mathematics — IISER Kolkata</li>
+        <li>Preparing for top internships & research programs</li>
+        <li>Learning Japanese and building great projects</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">© 2025 Uditansh Gupta. All rights reserved.</footer>
+
+  <script th:src="@{/js/scripts.js}"></script>
+</body>
+</html>
