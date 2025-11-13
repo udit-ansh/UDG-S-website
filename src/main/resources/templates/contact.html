@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <title>Projects — Uditansh Gupta</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+  <canvas id="sakuraCanvas"></canvas>
+
+  <nav class="navbar">
+    <a th:href="@{/}">Home</a>
+    <a th:href="@{/about}">About</a>
+    <a th:href="@{/experience}">Experience</a>
+    <a th:href="@{/skills}">Skills</a>
+    <a th:href="@{/projects}">Projects</a>
+    <a th:href="@{/contact}">Contact</a>
+  </nav>
+
+  <header class="header">
+    <div class="header-inner">
+      <div class="avatar-wrap"><img th:src="@{/images/avatar.jpg}" alt="avatar"></div>
+      <div>
+        <h1 class="site-title">Projects</h1>
+        <p class="site-sub">Select projects & demos</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <article class="project">
+          <span class="tag">ML</span>
+          <h3>Predictor — Small ML demo</h3>
+          <p>Prototype to predict X using Y. Notebooks and reproducible code.</p>
+          <div class="actions">
+            <a class="btn" href="#">View</a>
+            <a class="btn" href="#">Code</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <span class="tag">Algo</span>
+          <h3>Algorithms Practice</h3>
+          <p>Problem sets, solutions, and a planned repo of solved tasks.</p>
+          <div class="actions">
+            <a class="btn" href="#">View</a>
+            <a class="btn" href="#">Code</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <span class="tag">Data</span>
+          <h3>Data Explorations</h3>
+          <p>Exploratory data analysis, visualizations, and storytelling.</p>
+          <div class="actions">
+            <a class="btn" href="#">View</a>
+            <a class="btn" href="#">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">© 2025 Uditansh Gupta. All rights reserved.</footer>
+
+  <script th:src="@{/js/scripts.js}"></script>
+</body>
+</html>
