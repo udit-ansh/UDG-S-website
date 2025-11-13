@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <title>About — Uditansh Gupta</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+  <canvas id="sakuraCanvas"></canvas>
+
+  <nav class="navbar">
+    <a th:href="@{/}">Home</a>
+    <a th:href="@{/about}">About</a>
+    <a th:href="@{/experience}">Experience</a>
+    <a th:href="@{/skills}">Skills</a>
+    <a th:href="@{/projects}">Projects</a>
+    <a th:href="@{/contact}">Contact</a>
+  </nav>
+
+  <header class="header">
+    <div class="header-inner">
+      <div class="avatar-wrap"><img th:src="@{/images/avatar.jpg}" alt="avatar"></div>
+      <div>
+        <h1 class="site-title">About — Uditansh Gupta</h1>
+        <p class="site-sub">A little more about me and my interests</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Who I am</h2>
+      <p>I am a BS-MS student at IISER Kolkata majoring in Mathematics. I'm passionate about Machine Learning, Data Science, Quantitative Finance, and building clean software. I enjoy learning Japanese and anime culture.</p>
+    </section>
+
+    <section class="card">
+      <h2>Interests & Hobbies</h2>
+      <ul>
+        <li>Competitive programming & algorithms</li>
+        <li>AI/ML research foundations</li>
+        <li>Japanese language (self-study)</li>
+        <li>Music, anime, and cooking</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">© 2025 Uditansh Gupta. All rights reserved.</footer>
+
+  <script th:src="@{/js/scripts.js}"></script>
+</body>
+</html>
